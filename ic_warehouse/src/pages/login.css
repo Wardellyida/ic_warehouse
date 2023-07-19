@@ -1,0 +1,62 @@
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Optional: This will make the container fill the viewport height */
+}
+
+.login-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 300px; /* Set a max width for the form */
+}
+
+.login-container input[type="text"], 
+.login-container input[type="password"], 
+.login-container input[type="submit"] {
+    margin-bottom: 10px; /* Add some space between the inputs */
+}
+
+.login-container h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: 'Brush Script MT', cursive; /* replace with your desired font */
+    text-transform: capitalize; /* makes the first letter of each word uppercase */
+    /* create a gradient text */
+    background: linear-gradient(to right, rgb(221, 178, 97), rgb(142, 102, 28)); /* replace with your desired colors */
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+
+.login-container input[type="text"], .login-container input[type="password"] {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 5px rgba(0,0,0,.1) inset; /* This creates the shadow effect */
+}
+
+.login-container input[type="text"]::placeholder, .login-container input[type="password"]::placeholder {
+    color: #aaa; /* This changes the placeholder text color */
+}
+
+.login-container input[type="submit"] {
+    background-color: black;
+    margin-top: 15px;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 50%;
+    opacity: 0.9;
+}
+
+.login-container input[type="submit"]:hover {
+    opacity:1;
+}
