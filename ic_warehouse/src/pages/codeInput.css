@@ -1,0 +1,65 @@
+.input-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.Barcode-number-input{
+    width: 300px;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: gray;
+    outline: none;
+}
+
+.switch-button-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* height: 20vh; */
+    border-radius: 50px; /* 使容器具有药丸样式 */
+    overflow: hidden; /*隐藏超出边界的部分（例如，子元素的背景或边框）*/
+    border: 1px solid gray; /* 给容器添加边界 */
+    margin-top: 60px; /* 调整按钮与输入框的距离 */
+}
+
+.scan-button, .input-button {
+    flex-grow: 1; /* 使按钮填充容器的一半 */
+    padding: 10px 10px; /* 可以调整为你需要的大小 */
+    border: none;
+    background-color: #f2f2f2; /* 你喜欢的默认背景颜色 */
+    color:gray; /* 字体颜色 */
+    text-align: center;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out; /* 平滑的过渡效果 */
+}
+
+.scan-button:hover, .input-button:hover {
+    background-color: khaki; /* 鼠标悬停时的背景颜色 */
+    color: #ffffff; /* 鼠标悬停时的字体颜色 */
+    font-weight: bold; /* 鼠标悬停时的字体加粗 */
+}
+
+.scan-button.active, .input-button.active {
+    background-color:darkgray; /* 选中时的背景颜色 */
+    color: #ffffff; /* 选中时的字体颜色 */
+    font-weight: bold; /* 选中时的字体加粗 */
+}
+
+
+/* 调整小提示字体，让使用者有更好的观感体验 */
+.scan-tip{
+    text-align: center;
+    font-family: 'Brush Script MT', cursive; /* replace with your desired font */
+    /* create a gradient text */
+    background: linear-gradient(to right, rgb(221, 178, 97), rgb(142, 102, 28)); /* replace with your desired colors */
+    -webkit-background-clip: text;
+    color: transparent;
+}
